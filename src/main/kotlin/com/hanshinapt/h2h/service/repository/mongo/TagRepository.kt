@@ -11,7 +11,7 @@ import reactor.core.publisher.Flux
 @Repository
 class TagRepository(private val mongoTemplate: ReactiveMongoTemplate) {
 
-    fun findAll() : Flux<Tag> {
+    fun findAll(): Flux<Tag> {
         return mongoTemplate.findAll(Tag::class.java)
     }
 }

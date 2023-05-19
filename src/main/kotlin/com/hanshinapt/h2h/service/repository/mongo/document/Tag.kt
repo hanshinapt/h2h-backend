@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document
 /**
  * @author sangbeenmoon
  */
-@Document("tag")
+@Document(collection = "tag")
 data class Tag(
     @Id
     val id: ObjectId = ObjectId(),

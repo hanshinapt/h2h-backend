@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Field
 /**
  * @author sangbeenmoon
  */
-@Document(collation = "deck")
+@Document(collection = "deck")
 data class Deck(
     @Id
     val id: ObjectId = ObjectId(),

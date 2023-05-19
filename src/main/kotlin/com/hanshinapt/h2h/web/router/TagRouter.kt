@@ -12,9 +12,9 @@ import org.springframework.web.reactive.function.server.router
  * @author sangbeenmoon
  */
 @Configuration
-class TagRouter (private val tagService: TagService){
+class TagRouter(private val tagService: TagService) {
 
-    @Bean
+    @Bean("tagRoute")
     fun route() = router {
         GET("/api/v1/tags") { ServerResponse.ok().contentType(MediaType.APPLICATION_JSON).body(tagService.get(), Tag::class.java) }
     }
