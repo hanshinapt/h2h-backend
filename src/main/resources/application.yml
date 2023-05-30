@@ -1,1 +1,5 @@
-
+spring:
+  data:
+    mongodb:
+      uri: "mongodb+srv://h2h:mongo123@h2h.twx2bs1.mongodb.net/?retryWrites=true&w=majority"
+      database: "h2h"
