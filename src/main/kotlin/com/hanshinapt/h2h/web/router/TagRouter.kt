@@ -14,8 +14,6 @@ import org.springframework.web.reactive.function.server.router
  */
 @CrossOrigin
 @Configuration
-class TagRouter(private val tagService: TagService) {
-
     @Bean("tagRoute")
     fun route() = router {
         GET("/api/v1/tags") { ServerResponse.ok().contentType(MediaType.APPLICATION_JSON).body(tagService.get(), Tag::class.java) }
