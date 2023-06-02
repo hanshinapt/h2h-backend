@@ -2,7 +2,6 @@ package com.hanshinapt.h2h.service.repository.mongo
 
 import com.hanshinapt.h2h.service.repository.mongo.document.Deck
 import org.springframework.data.domain.Sort
-<<<<<<< HEAD
 import org.springframework.data.mongodb.core.FindAndModifyOptions
 import org.springframework.data.mongodb.core.ReactiveMongoTemplate
 import org.springframework.data.mongodb.core.query.Criteria
@@ -11,12 +10,7 @@ import org.springframework.data.mongodb.core.query.Update
 import org.springframework.stereotype.Repository
 import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
-=======
-import org.springframework.data.mongodb.core.ReactiveMongoTemplate
-import org.springframework.data.mongodb.core.query.Query
-import org.springframework.stereotype.Repository
-import reactor.core.publisher.Flux
->>>>>>> 79454a907eb1553f78d7fdac1b54eb02056a6f44
+
 
 /**
  * @author sangbeenmoon

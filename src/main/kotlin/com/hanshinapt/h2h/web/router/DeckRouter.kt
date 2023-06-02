@@ -15,8 +15,6 @@ import org.springframework.web.reactive.function.server.router
 @CrossOrigin
 @Configuration
 class DeckRouter(private val deckService: DeckService) {
-
-
     @Bean("deckRoute")
     fun route() = router {
         listOf(
