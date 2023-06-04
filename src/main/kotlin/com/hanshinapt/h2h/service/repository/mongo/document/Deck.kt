@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Field
 @Document(collection = "deck")
 data class Deck(
     @Id
-    val id: ObjectId = ObjectId(),
+    val id: String = "",
     val title: String = "",
     val description: String = "",
     @Field("tags")

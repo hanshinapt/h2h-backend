@@ -7,7 +7,5 @@ import org.springframework.data.annotation.Id
  * @author sangbeenmoon
  */
 data class Question(
-    @Id
-    val id: ObjectId = ObjectId(),
     val content: String = ""
 )

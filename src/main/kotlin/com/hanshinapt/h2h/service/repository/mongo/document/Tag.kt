@@ -10,6 +10,6 @@ import org.springframework.data.mongodb.core.mapping.Document
 @Document(collection = "tag")
 data class Tag(
     @Id
-    val id: ObjectId = ObjectId(),
+    val id: String = "",
     val name: String = ""
 )
